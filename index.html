@@ -1,0 +1,283 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+ <!--  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  /> -->
+
+  <link
+    href="font-google.css"
+    rel="stylesheet"
+  />
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script> -->
+
+  <script src="sweetalert2.all.min.js"></script>
+
+  <!-- <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  /> -->
+
+   <link
+    href="style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <!-- <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script> -->
+
+  <script src="animasi.js"></script>
+  <head> 
+    <title> Selamat Hari Guru 2023</title>
+  </head>
+  <style>
+    body {
+      background-image: url('bg1.jpg');
+      background-repeat: repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      /> -->
+    </div>
+
+    <div id="Content">
+
+         <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+
+      <div class="image">
+
+     
+
+        <img
+          src="img/1.jpg"
+          width="130px"
+          height="130px"
+        />
+
+        <img
+          src="img/2.jpg"
+          width="130px"
+          height="130px"
+        />
+
+        
+
+        <img
+          src="img/3.jpg"
+          width="130px"
+          height="130px"
+        />
+
+        
+
+      </div>
+
+
+
+
+       <div class="image">
+
+        
+        <img
+          src="img/4.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/5.jpg"
+          width="130px"
+          height="130px"
+        />
+
+        <img
+          src="img/6.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+      </div>
+
+      <div class="image">
+
+        
+        <img
+          src="img/7.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/8.jpg"
+          width="130px"
+          height="130px"
+        />
+
+        <img
+          src="img/9.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+      </div>
+
+
+      <div class="image">
+
+           <img
+          src="img/10.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/11.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/12.jpg"
+          width="130px"
+          height="130px"
+        />
+    
+      </div>
+
+       <div class="image">
+
+           <img
+          src="img/13.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/14.jpg"
+          width="130px"
+          height="130px"
+        />
+
+
+        <img
+          src="img/15.jpg"
+          width="130px"
+          height="130px"
+        />
+    
+      </div>
+
+
+       
+   
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "mp3/hbd-gitar-1.mp3"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 8000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Selamat Hari Guru Tahun 2023`,
+          imageUrl: "img/1.jpg",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Next",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "Setiap orang menjadi guru, setiap rumah menjadi sekolah. <br>Ki Hadjar Dewantara",
+          imageUrl: "img/2.jpg",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Teknologi hanyalah alat. Namun,  untuk menjadikan anak-anak bisa saling bekerjasama dan termotivasi,  guru adalah yang paling penting. <br> Bill Gates",
+          imageUrl: "img/3.jpg",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Semua orang jenius. Tetapi jika Anda menilai seekor ikan dengan kemampuannya memanjat pohon, ia akan hidup seumur hidup dengan percaya bahwa itu bodoh. <br> Albert Einstein",
+          imageUrl: "img/4.jpg",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Berdoa Sendiri saja aa, Nanti so mo aminkan",
+          imageUrl: "img/5.jpg",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "Keberhasilan bukanlah milik orang yang pintar. Keberhasilan adalah kepunyaan mereka yang senantiasa berusaha. <br> Bj Habibie"
+        emotnama = ""
+        text2 = "Jika Kamu tidak sanggup menahan lelahnya belajar maka kamu harus sanggup menahan perihnya kebodohan. <br Imam Syafi’i"
+        text3 = "Selamat Hari Guru Seluruh Tentor Kids Clever Bimbel Gorontalo <br> Yang dapat kado ini tolong hubungi <a href='https://instagram.com/adithairun'> Saya Yaa </a>"
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
